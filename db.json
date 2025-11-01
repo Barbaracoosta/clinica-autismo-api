@@ -1,0 +1,283 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "Lucas Oliveira",
+      "birthDate": "2016-03-15",
+      "age": 8,
+      "cpf": "123.456.789-00",
+      "phone": "(11) 99999-9999",
+      "email": "contato@familiaoliveira.com",
+      "address": "Rua das Flores, 123 - São Paulo, SP",
+      "healthPlan": "Amil Saúde",
+      "therapies": [
+        "ABA",
+        "Terapia Ocupacional"
+      ],
+      "guardian": {
+        "name": "Ana Oliveira",
+        "relationship": "Mãe",
+        "phone": "(11) 98888-8888"
+      },
+      "financialResponsible": {
+        "name": "Carlos Oliveira",
+        "phone": "(11) 97777-7777",
+        "email": "carlos@empresa.com"
+      },
+      "status": "active",
+      "createdAt": "2024-01-10T10:00:00Z",
+      "updatedAt": "2024-01-10T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Maria Santos",
+      "birthDate": "2018-07-22",
+      "age": 6,
+      "cpf": "987.654.321-00",
+      "phone": "(11) 98888-8888",
+      "email": "familia.santos@email.com",
+      "address": "Av. Paulista, 1000 - São Paulo, SP",
+      "healthPlan": "SulAmérica",
+      "therapies": [
+        "Fonoaudiologia",
+        "Terapia Ocupacional"
+      ],
+      "guardian": {
+        "name": "Carlos Santos",
+        "relationship": "Pai",
+        "phone": "(11) 97777-7777"
+      },
+      "financialResponsible": {
+        "name": "Carlos Santos",
+        "phone": "(11) 97777-7777",
+        "email": "carlos.santos@empresa.com"
+      },
+      "status": "active",
+      "createdAt": "2024-01-11T14:30:00Z",
+      "updatedAt": "2024-01-11T14:30:00Z"
+    },
+    {
+      "name": "Barbara Costa",
+      "birthDate": "1991-06-22",
+      "phone": "81999791098",
+      "email": "babiicoosta@hotmail.com",
+      "address": "Rua da Redenção 114",
+      "healthPlan": "Amil Saúde",
+      "therapies": [
+        "ABA",
+        "Terapia Ocupacional",
+        "Fonoaudiologia",
+        "Psicologia",
+        "Psicomotricidade"
+      ],
+      "guardian": {
+        "name": "Nylbert Dias Lima",
+        "relationship": "Pai",
+        "phone": "81995585464"
+      },
+      "age": 34,
+      "status": "active",
+      "createdAt": "2025-11-01T01:44:05.044Z",
+      "updatedAt": "2025-11-01T01:44:05.045Z",
+      "id": "2616"
+    }
+  ],
+  "staff": [
+    {
+      "name": "Dra. Ana Silva",
+      "email": "ana.silva@clinica.com",
+      "phone": "(11) 96666-6666",
+      "type": "at",
+      "specialties": [
+        "ABA",
+        "Terapia Ocupacional"
+      ],
+      "atType": "school",
+      "workingHours": {
+        "monday": [
+          "08:00",
+          "18:00"
+        ],
+        "tuesday": [
+          "08:00",
+          "18:00"
+        ],
+        "wednesday": [
+          "08:00",
+          "18:00"
+        ],
+        "thursday": [
+          "08:00",
+          "18:00"
+        ],
+        "friday": [
+          "08:00",
+          "17:00"
+        ],
+        "saturday": [
+          "",
+          ""
+        ],
+        "sunday": [
+          "",
+          ""
+        ]
+      },
+      "active": true,
+      "id": "1"
+    },
+    {
+      "name": "Carlos Mendes",
+      "email": "carlos.mendes@clinica.com",
+      "phone": "",
+      "type": "at",
+      "specialties": [
+        "ABA",
+        "Psicomotricidade",
+        "Psicologia",
+        "Fonoaudiologia",
+        "Terapia Ocupacional"
+      ],
+      "workingHours": {
+        "monday": [
+          "08:00",
+          "18:00"
+        ],
+        "tuesday": [
+          "08:00",
+          "18:00"
+        ],
+        "wednesday": [
+          "08:00",
+          "18:00"
+        ],
+        "thursday": [
+          "08:00",
+          "18:00"
+        ],
+        "friday": [
+          "08:00",
+          "17:00"
+        ],
+        "saturday": [
+          "",
+          ""
+        ],
+        "sunday": [
+          "",
+          ""
+        ]
+      },
+      "active": false,
+      "id": "2"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "patientId": 1,
+      "staffId": 1,
+      "patientName": "Lucas Oliveira",
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-15",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "duration": 60,
+      "specialty": "ABA",
+      "status": "scheduled",
+      "notes": "Primeira sessão da semana",
+      "createdAt": "2024-01-10T11:00:00Z"
+    },
+    {
+      "id": "2",
+      "patientId": 2,
+      "staffId": 1,
+      "patientName": "Maria Santos",
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-15",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "duration": 60,
+      "specialty": "Fonoaudiologia",
+      "status": "scheduled",
+      "notes": "Avaliação inicial",
+      "createdAt": "2024-01-10T11:30:00Z"
+    }
+  ],
+  "healthPlans": [
+    {
+      "id": "1",
+      "name": "Amil Saúde",
+      "specialties": [
+        {
+          "name": "ABA",
+          "value": 80
+        },
+        {
+          "name": "Terapia Ocupacional",
+          "value": 90
+        },
+        {
+          "name": "Fonoaudiologia",
+          "value": 85
+        },
+        {
+          "name": "Psicologia",
+          "value": 95
+        },
+        {
+          "name": "Psicomotricidade",
+          "value": 75
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "2",
+      "name": "SulAmérica",
+      "specialties": [
+        {
+          "name": "ABA",
+          "value": 95
+        },
+        {
+          "name": "Terapia Ocupacional",
+          "value": 100
+        },
+        {
+          "name": "Fonoaudiologia",
+          "value": 90
+        },
+        {
+          "name": "Psicologia",
+          "value": 110
+        },
+        {
+          "name": "Psicomotricidade",
+          "value": 85
+        }
+      ],
+      "active": true
+    }
+  ],
+  "groupSessions": [
+    {
+      "id": "1",
+      "therapistId": 1,
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-20",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "specialty": "Psicomotricidade",
+      "participantIds": [
+        1,
+        2
+      ],
+      "maxParticipants": 6,
+      "currentParticipants": 2,
+      "status": "scheduled",
+      "notes": "Sessão de integração sensorial",
+      "createdAt": "2024-01-12T09:00:00Z"
+    }
+  ]
+}
