@@ -1,7 +1,7 @@
 {
   "patients": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Lucas Oliveira",
       "birthDate": "2016-03-15",
       "age": 8,
@@ -29,7 +29,7 @@
       "updatedAt": "2024-01-10T10:00:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Maria Santos",
       "birthDate": "2018-07-22",
       "age": 6,
@@ -87,7 +87,7 @@
       "name": "Dra. Ana Silva",
       "email": "ana.silva@clinica.com",
       "phone": "(11) 96666-6666",
-      "type": "at",
+      "type": "therapist",
       "specialties": [
         "ABA",
         "Terapia Ocupacional"
@@ -258,26 +258,1021 @@
         }
       ],
       "active": true
+    },
+    {
+      "id": "e7af",
+      "name": "Bradesco Saúde",
+      "specialties": [
+        {
+          "name": "ABA",
+          "value": 1000
+        },
+        {
+          "name": "Terapia Ocupacional",
+          "value": 1000
+        },
+        {
+          "name": "Fonoaudiologia",
+          "value": 2000
+        },
+        {
+          "name": "Psicologia",
+          "value": 3000
+        },
+        {
+          "name": "Psicomotricidade",
+          "value": 5000
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "661b",
+      "name": "Porto Seguro",
+      "specialties": [
+        {
+          "name": "ABA",
+          "value": 10
+        },
+        {
+          "name": "Terapia Ocupacional",
+          "value": 20
+        },
+        {
+          "name": "Fonoaudiologia",
+          "value": 30
+        },
+        {
+          "name": "Psicologia",
+          "value": 40
+        },
+        {
+          "name": "Psicomotricidade",
+          "value": 50
+        }
+      ],
+      "active": true
     }
   ],
   "groupSessions": [
     {
-      "id": "1",
-      "therapistId": 1,
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-20",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "specialty": "Terapia Ocupacional",
+      "maxParticipants": 10,
+      "participantIds": [
+        1,
+        2,
+        "1"
+      ],
+      "currentParticipants": 3,
+      "notes": "Sessão de integração sensorial",
+      "status": "scheduled",
+      "isGroup": true,
+      "createdAt": "2025-11-01T20:15:29.977Z",
+      "updatedAt": "2025-11-01T20:15:29.977Z",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "therapistId": "1",
       "therapist": "Dra. Ana Silva",
       "date": "2024-01-20",
       "startTime": "14:00",
       "endTime": "15:30",
       "specialty": "Psicomotricidade",
       "participantIds": [
-        1,
-        2
+        "1",
+        "2"
       ],
       "maxParticipants": 6,
       "currentParticipants": 2,
       "status": "scheduled",
       "notes": "Sessão de integração sensorial",
       "createdAt": "2024-01-12T09:00:00Z"
+    },
+    {
+      "id": "3",
+      "therapistId": "2",
+      "therapist": "Carlos Mendes",
+      "date": "2024-01-25",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "specialty": "ABA",
+      "participantIds": [
+        "1",
+        "2",
+        "2616"
+      ],
+      "maxParticipants": 8,
+      "currentParticipants": 3,
+      "status": "scheduled",
+      "notes": "Sessão de habilidades sociais",
+      "createdAt": "2024-01-18T14:30:00Z"
+    },
+    {
+      "id": "cdbd",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-05",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T20:11:06.149Z",
+      "updatedAt": "2025-11-01T20:11:06.149Z"
+    },
+    {
+      "id": "0ae6",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-05",
+      "startTime": "08:40",
+      "endTime": "09:20",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T20:11:06.150Z",
+      "updatedAt": "2025-11-01T20:11:06.150Z"
+    },
+    {
+      "id": "1048",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-06",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T20:11:06.150Z",
+      "updatedAt": "2025-11-01T20:11:06.150Z"
+    },
+    {
+      "id": "511f",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-06",
+      "startTime": "08:40",
+      "endTime": "09:20",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T20:11:06.150Z",
+      "updatedAt": "2025-11-01T20:11:06.150Z"
+    },
+    {
+      "id": "3843",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-20",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "specialty": "Terapia Ocupacional",
+      "maxParticipants": 10,
+      "participantIds": [
+        1,
+        2,
+        "1"
+      ],
+      "currentParticipants": 3,
+      "notes": "Sessão de integração sensorial",
+      "status": "scheduled",
+      "isGroup": true,
+      "createdAt": "2025-11-01T20:16:24.792Z",
+      "updatedAt": "2025-11-01T20:16:24.792Z"
+    },
+    {
+      "id": "6ad6",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-11",
+      "startTime": "10:40",
+      "endTime": "11:20",
+      "specialty": "Terapia Ocupacional",
+      "maxParticipants": 10,
+      "participantIds": [
+        1,
+        2,
+        "1"
+      ],
+      "currentParticipants": 3,
+      "notes": "Sessão de integração sensorial",
+      "status": "scheduled",
+      "isGroup": true,
+      "createdAt": "2025-11-01T20:16:24.792Z",
+      "updatedAt": "2025-11-01T20:16:24.792Z"
+    },
+    {
+      "id": "7c73",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-20",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "specialty": "Terapia Ocupacional",
+      "maxParticipants": 10,
+      "participantIds": [
+        1,
+        2,
+        "1"
+      ],
+      "currentParticipants": 3,
+      "notes": "Sessão de integração sensorial",
+      "status": "scheduled",
+      "isGroup": true,
+      "createdAt": "2025-11-01T20:17:15.208Z",
+      "updatedAt": "2025-11-01T20:17:15.208Z"
+    },
+    {
+      "id": "4244",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-20",
+      "startTime": "10:00",
+      "endTime": "10:40",
+      "specialty": "Terapia Ocupacional",
+      "maxParticipants": 10,
+      "participantIds": [
+        1,
+        2,
+        "1"
+      ],
+      "currentParticipants": 3,
+      "notes": "Sessão de integração sensorial",
+      "status": "scheduled",
+      "isGroup": true,
+      "createdAt": "2025-11-01T20:17:15.208Z",
+      "updatedAt": "2025-11-01T20:17:15.208Z"
+    },
+    {
+      "id": "9424",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-20",
+      "startTime": "10:40",
+      "endTime": "11:20",
+      "specialty": "Terapia Ocupacional",
+      "maxParticipants": 10,
+      "participantIds": [
+        1,
+        2,
+        "1"
+      ],
+      "currentParticipants": 3,
+      "notes": "Sessão de integração sensorial",
+      "status": "scheduled",
+      "isGroup": true,
+      "createdAt": "2025-11-01T20:17:15.208Z",
+      "updatedAt": "2025-11-01T20:17:15.208Z"
+    },
+    {
+      "id": "4924",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2024-01-20",
+      "startTime": "11:20",
+      "endTime": "12:00",
+      "specialty": "Terapia Ocupacional",
+      "maxParticipants": 10,
+      "participantIds": [
+        1,
+        2,
+        "1"
+      ],
+      "currentParticipants": 3,
+      "notes": "Sessão de integração sensorial",
+      "status": "scheduled",
+      "isGroup": true,
+      "createdAt": "2025-11-01T20:17:15.209Z",
+      "updatedAt": "2025-11-01T20:17:15.209Z"
+    },
+    {
+      "id": "22e7",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-10-30",
+      "startTime": "10:00",
+      "endTime": "10:40",
+      "specialty": "Terapia Ocupacional",
+      "participantIds": [
+        "2"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "",
+      "status": "scheduled",
+      "isGroup": false
+    },
+    {
+      "id": "56f2",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-10-30",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "participantIds": [
+        "2"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "",
+      "status": "scheduled",
+      "isGroup": false
+    },
+    {
+      "id": "5f54",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-10-27",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:05:06.355Z",
+      "updatedAt": "2025-11-01T22:05:06.355Z"
+    },
+    {
+      "id": "01b8",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-03",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:06:10.985Z",
+      "updatedAt": "2025-11-01T22:06:10.985Z"
+    },
+    {
+      "id": "c4eb",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-04",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:06:10.985Z",
+      "updatedAt": "2025-11-01T22:06:10.985Z"
+    },
+    {
+      "id": "f276",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-05",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:06:10.985Z",
+      "updatedAt": "2025-11-01T22:06:10.985Z"
+    },
+    {
+      "id": "4ab5",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-06",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:06:10.985Z",
+      "updatedAt": "2025-11-01T22:06:10.985Z"
+    },
+    {
+      "id": "91a9",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-07",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:06:10.985Z",
+      "updatedAt": "2025-11-01T22:06:10.985Z"
+    },
+    {
+      "id": "905c",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-03",
+      "startTime": "10:00",
+      "endTime": "10:40",
+      "specialty": "Terapia Ocupacional",
+      "participantIds": [
+        "2"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:10:32.263Z",
+      "updatedAt": "2025-11-01T22:10:32.263Z"
+    },
+    {
+      "id": "ebf5",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-04",
+      "startTime": "10:00",
+      "endTime": "10:40",
+      "specialty": "Terapia Ocupacional",
+      "participantIds": [
+        "2"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:10:32.263Z",
+      "updatedAt": "2025-11-01T22:10:32.263Z"
+    },
+    {
+      "id": "9823",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-05",
+      "startTime": "10:00",
+      "endTime": "10:40",
+      "specialty": "Terapia Ocupacional",
+      "participantIds": [
+        "2"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:10:32.263Z",
+      "updatedAt": "2025-11-01T22:10:32.263Z"
+    },
+    {
+      "id": "639d",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-06",
+      "startTime": "10:00",
+      "endTime": "10:40",
+      "specialty": "Terapia Ocupacional",
+      "participantIds": [
+        "2"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:10:32.263Z",
+      "updatedAt": "2025-11-01T22:10:32.263Z"
+    },
+    {
+      "id": "195f",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-07",
+      "startTime": "10:00",
+      "endTime": "10:40",
+      "specialty": "Terapia Ocupacional",
+      "participantIds": [
+        "2"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:10:32.263Z",
+      "updatedAt": "2025-11-01T22:10:32.263Z"
+    },
+    {
+      "id": "589a",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-03",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:20:58.619Z",
+      "updatedAt": "2025-11-01T22:20:58.619Z"
+    },
+    {
+      "id": "d03c",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-04",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:20:58.619Z",
+      "updatedAt": "2025-11-01T22:20:58.619Z"
+    },
+    {
+      "id": "f4f4",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-05",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:20:58.619Z",
+      "updatedAt": "2025-11-01T22:20:58.619Z"
+    },
+    {
+      "id": "655e",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-06",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:20:58.619Z",
+      "updatedAt": "2025-11-01T22:20:58.619Z"
+    },
+    {
+      "id": "3a27",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-07",
+      "startTime": "09:20",
+      "endTime": "10:00",
+      "specialty": "ABA",
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "jhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-01T22:20:58.619Z",
+      "updatedAt": "2025-11-01T22:20:58.619Z"
+    },
+    {
+      "id": "9562",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-04",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "Terapia Ocupacional",
+      "participantIds": [
+        "2"
+      ],
+      "currentParticipants": 1,
+      "maxParticipants": 1,
+      "notes": "kjhkjhjk",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:39:44.936Z",
+      "updatedAt": "2025-11-03T22:39:44.936Z"
+    },
+    {
+      "id": "e8b3",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-05",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "67b0",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-06",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "6319",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-07",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "46d9",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-08",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "6851",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-11",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "67ad",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-12",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "d54a",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-13",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "41b9",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-15",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "4600",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-18",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "52b3",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-19",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "6a11",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-20",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "abc4",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-21",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "4416",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-22",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "5a7b",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-25",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "baa3",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-26",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "2cb6",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-27",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "a096",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-28",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
+    },
+    {
+      "id": "03d5",
+      "therapistId": "1",
+      "therapist": "Dra. Ana Silva",
+      "date": "2025-11-29",
+      "startTime": "08:00",
+      "endTime": "08:40",
+      "specialty": "ABA",
+      "maxParticipants": 1,
+      "participantIds": [
+        "1"
+      ],
+      "currentParticipants": 1,
+      "notes": "asd",
+      "status": "scheduled",
+      "isGroup": false,
+      "createdAt": "2025-11-03T22:40:20.501Z",
+      "updatedAt": "2025-11-03T22:40:20.501Z"
     }
   ]
 }
